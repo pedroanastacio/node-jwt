@@ -5,10 +5,10 @@ const privateKey = fs.readFileSync(path.resolve(__dirname, './private.key'), 'ut
 const publicKey = fs.readFileSync(path.resolve(__dirname, './public.key'), 'utf8')
 
 export default {
-    privateKey,
-    publicKey,
-    authOptions: {
-        expiresIn: '5000s',
-        algorithm: 'RS256',
-    }
+	privateKey,
+	publicKey,
+	authOptions: {
+		expiresIn: '5000s',
+		algorithm: 'RS256',
+	}
 }
